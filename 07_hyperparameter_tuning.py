@@ -34,9 +34,9 @@ rf_pipe = Pipeline([('scaler', StandardScaler()),
                     ('rf', RandomForestRegressor(n_estimators=300, random_state=42))])
 rf_grid = GridSearchCV(rf_pipe,
                         param_grid={
-                            'rf__max_depth': [2, 3, 4, 5],
-                            'rf__min_samples_leaf': [2, 3, 4],
-                            'rf__max_features': [0.5, 0.7, 1.0],
+                            'rf__max_depth': [2, 3, 4],
+                            'rf__min_samples_leaf': [2, 3],
+                            'rf__max_features': [0.5, 1.0],
                         },
                         cv=LeaveOneOut(), scoring=rmse_scorer)
 rf_grid.fit(X, y_burst)
@@ -48,10 +48,9 @@ xgb_pipe = Pipeline([('scaler', StandardScaler()),
 xgb_grid = GridSearchCV(xgb_pipe,
                          param_grid={
                              'xgb__max_depth': [2, 3],
-                             'xgb__learning_rate': [0.01, 0.05, 0.1],
-                             'xgb__n_estimators': [50, 100, 200],
-                             'xgb__reg_alpha': [0, 0.1, 1.0],
-                             'xgb__subsample': [0.7, 0.8],
+                             'xgb__learning_rate': [0.05, 0.1],
+                             'xgb__n_estimators': [100, 200],
+                             'xgb__reg_alpha': [0, 1.0],
                          },
                          cv=LeaveOneOut(), scoring=rmse_scorer)
 xgb_grid.fit(X, y_burst)
