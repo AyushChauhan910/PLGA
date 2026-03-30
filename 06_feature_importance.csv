@@ -1,0 +1,38 @@
+Feature,Mean_SHAP,Pharmaceutical_Meaning
+Drug Solubility mg per mL,2.7436729902248196,
+Hydrophilicity_Index,2.041490546572878,Engineered: drug-PLGA phase partition predictor
+Drug_Cat_enc,1.0967127080813142,
+Drug_Particle_Size_Ratio,0.8841912940225677,
+Drug LogP,0.39547954310311867,Lipophilicity -> drug-polymer affinity -> burst modulation
+ZetaPotential mV,0.3868512201245322,
+Abs_Zeta,0.3796298575352564,
+Particle Size um,0.2934618517877865,Physical barrier for drug escape -> burst control
+Diffusion_Barrier,0.27355759471193986,Particle size x PDI -> effective diffusion path length
+MW_Viscosity,0.13741583187833947,Entanglement density -> diffusion resistance
+Agitation RPM,0.10466513661382763,
+Hydrolysis_Index,0.10328550827181633,Engineered: combined degradation susceptibility score
+Stabilizer Concentration percent,0.10136464913286578,
+Polymer MW kDa,0.09758717768408992,Chain length -> matrix integrity during degradation
+Tg_Offset,0.09695888259720836,Polymer chain mobility at 37C -> diffusion rate
+Dose mg,0.07721119256428803,
+Polymer Tg C,0.07003038557544027,Raw Tg -> chain flexibility at body temperature
+Drug MW Da,0.0641436804430446,
+Drug pKa,0.0625760944388825,
+Encapsulation_enc,0.059928703704134945,
+Entrapment Efficiency percent,0.0562749345258618,
+Inherent Viscosity dL per g,0.055810579169693994,
+Log_PolymerDrug_Ratio,0.04746008075503618,
+Drug Loading percent,0.042836930141257404,Drug density in matrix -> percolation threshold
+Release Medium pH,0.030646565359918495,
+PDI,0.029613594968177444,
+EE_DL_Interaction,0.026353899377736845,Actual drug packing density in microsphere
+Drug_Load_Squared,0.024705204469927695,
+Polymer to Drug Ratio,0.023996506514319785,
+Drying_enc,0.023919651145515804,
+Species_enc,0.017325427140231674,
+Stabilizer_enc,0.01328198122075948,
+Release_Method_enc,0.011459430964816567,
+Endcap_factor,0.010121635827318485,
+GA_fraction,0.00943973911052674,Glycolide % -> hydrolysis rate -> degradation speed
+Admin_enc,0.004279437511869337,
+Temperature C,0.0,
