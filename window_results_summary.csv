@@ -1,0 +1,10 @@
+Window,N timepoints,Model,RMSE (%),Mean R²
+D0.25h–D15,9,Ridge,6.76,0.797
+D0.25h–D15,9,Random Forest,6.28,0.817
+D0.25h–D15,9,XGBoost,6.04,0.855
+D0.25h–D30,11,Ridge,7.85,0.775
+D0.25h–D30,11,Random Forest,7.02,0.809
+D0.25h–D30,11,XGBoost,7.03,0.834
+D0.25h–D60,14,Ridge,8.49,0.738
+D0.25h–D60,14,Random Forest,7.79,0.769
+D0.25h–D60,14,XGBoost,7.63,0.801
